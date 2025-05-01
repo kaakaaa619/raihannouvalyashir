@@ -1,33 +1,95 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Raihan Nouval Yashir | Sistem Operasi</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Pribadi - [Raihan Nouval Yashir]</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 1rem;
+    }
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    h2 {
+      border-bottom: 2px solid #4a90e2;
+      padding-bottom: 0.5rem;
+    }
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .portfolio-item {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <div class="header">
-    <h1>Raihan Nouval Yashir</h1>
-    <p>Tugas Mata Kuliah Sistem Operasi</p>
-  </div>
 
-  <div class="card">
-    <div class="info">
-      <p><strong>NIM:</strong> 2303010122</p>
-      <p><strong>Kelas:</strong> 4F</p>
+  <header>
+    <img src="foto-profil.jpg" alt="Foto Profil" />
+    <h1>[Raihan Nouval Yashir]</h1>
+    <p>Mahasiswa | Web Developer | Content Creator</p>
+  </header>
+
+  <section>
+    <h2>Tentang Saya</h2>
+    <p>Halo! Saya [Kaka], seorang mahasiswa yang tertarik dalam pengembangan web dan desain UI/UX. Saya senang mempelajari hal baru dan membuat proyek-proyek yang berdampak positif.</p>
+  </section>
+
+  <section>
+    <h2>Portofolio</h2>
+    <div class="portfolio">
+      <div class="portfolio-item">
+        <h3>Proyek 1</h3>
+        <p>Website toko online dengan HTML, CSS, dan JavaScript.</p>
+      </div>
+      <div class="portfolio-item">
+        <h3>Proyek 2</h3>
+        <p>Aplikasi to-do list sederhana dengan React.</p>
+      </div>
+      <!-- Tambah lebih banyak proyek -->
     </div>
+  </section>
 
-    <h2>📚 Daftar Tugas</h2>
-    <ul class="tasks">
-      <li><a href="tugas1.html">Tugas 1 – Penjadwalan Disk</a></li>
-      <li><a href="#">Tugas 2 – Manajemen Proses</a></li>
-      <li><a href="#">Tugas 3 – Manajemen Memori</a></li>
-    </ul>
-  </div>
+  <section>
+    <h2>Kontak</h2>
+    <p>Email: 2303010122@unper.ac.id</p>
+    <p>Instagram: @rhnvlys</p>
+    <p>LinkedIn: linkedin.com/in/kaakaaa</p>
+  </section>
 
   <footer>
-    <p>© 2025 Raihan Nouval Yashir</p>
+    &copy; 2025 [Raihan Nouval Yashir]. Semua hak dilindungi.
   </footer>
+
 </body>
 </html>
