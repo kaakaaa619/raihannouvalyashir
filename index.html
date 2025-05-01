@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web Pribadi - [Raihan Nouval Yashir]</title>
+  <title>Web Pribadi - Raihan Nouval Yashir</title>
   <style>
     body {
       margin: 0;
@@ -56,29 +56,115 @@
 
   <header>
     <img src="foto-profil.jpg" alt="Foto Profil" />
-    <h1>[Raihan Nouval Yashir]</h1>
+    <h1>Raihan Nouval Yashir</h1>
     <p>Mahasiswa | Web Developer | Content Creator</p>
   </header>
 
   <section>
     <h2>Tentang Saya</h2>
-    <p>Halo! Saya [Kaka], seorang mahasiswa yang tertarik dalam pengembangan web dan desain UI/UX. Saya senang mempelajari hal baru dan membuat proyek-proyek yang berdampak positif.</p>
+    <p>Halo! Saya Raihan, seorang mahasiswa yang tertarik dalam pengembangan web dan desain UI/UX. Saya senang mempelajari hal baru dan membuat proyek-proyek yang berdampak positif.</p>
   </section>
 
+  <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Pribadi - Daftar Tugas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    h2 {
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    .task {
+      background-color: #e6f2fd;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      color: #004080;
+      transition: background 0.3s;
+    }
+    .task:hover {
+      background-color: #d0e8fc;
+    }
+    .answer {
+      display: none;
+      background-color: #fff;
+      padding: 1rem;
+      border-left: 5px solid #4a90e2;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Web Pribadi - M. Giri Ardhi M.</h1>
+    <p>Mahasiswa Sistem Operasi</p>
+  </header>
+
   <section>
-    <h2>Portofolio</h2>
-    <div class="portfolio">
-      <div class="portfolio-item">
-        <h3>Proyek 1</h3>
-        <p>Website toko online dengan HTML, CSS, dan JavaScript.</p>
-      </div>
-      <div class="portfolio-item">
-        <h3>Proyek 2</h3>
-        <p>Aplikasi to-do list sederhana dengan React.</p>
-      </div>
-      <!-- Tambah lebih banyak proyek -->
+    <h2>Daftar Tugas</h2>
+
+    <div class="task" onclick="toggleAnswer('answer1')">Tugas 1 – Manajemen Proses</div>
+    <div class="answer" id="answer1">
+      <p>Menjelaskan konsep proses dalam sistem operasi, termasuk PCB, lifecycle proses (new, ready, running, waiting, terminated), serta peran scheduler dan dispatcher.</p>
+    </div>
+
+    <div class="task" onclick="toggleAnswer('answer2')">Tugas 2 – Penjadwalan CPU</div>
+    <div class="answer" id="answer2">
+      <p>Membandingkan algoritma penjadwalan CPU: FCFS, SJF, Priority, dan Round Robin. Setiap algoritma diuji dengan contoh dan dihitung average waiting time serta turnaround time.</p>
+    </div>
+
+    <div class="task" onclick="toggleAnswer('answer3')">Tugas 3 – Manajemen Memori</div>
+    <div class="answer" id="answer3">
+      <p>Membahas alokasi memori: contiguous (fixed & variable partition), paging, segmentation, serta strategi seperti first-fit, best-fit, dan worst-fit.</p>
+    </div>
+
+    <div class="task" onclick="toggleAnswer('answer4')">Tugas 4 – Penjadwalan Disk</div>
+    <div class="answer" id="answer4">
+      <p>
+        Jumlah track = 2000, head awal = 1234, urutan akses termasuk: 1600, 1050, 1775, 1950, 30, 825, ..., dst.<br>
+        Nilai dinamis berdasarkan tanggal lahir/NIM:<br>
+        [x1]=30, [x2]=500, [x3]=2007, [x4]=56.<br><br>
+        <strong>Jawaban:</strong><br>
+        Hitung total perpindahan head dengan masing-masing algoritma: FCFS, SSTF, SCAN, CSCAN, LOOK, dan CLOOK.<br>
+        Perjalanan head digambarkan sebagai grafik dan dijelaskan narasi alasan efisiensi tiap metode.
+      </p>
     </div>
   </section>
+
+  <script>
+    function toggleAnswer(id) {
+      const answer = document.getElementById(id);
+      answer.style.display = (answer.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
+
 
   <section>
     <h2>Kontak</h2>
